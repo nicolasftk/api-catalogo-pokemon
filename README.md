@@ -18,13 +18,13 @@ A API oferece as seguintes funcionalidades:
 
 Aqui estão os endpoints ativos na API, todos acessíveis através do arquivo rotas.js:
 
-- POST /signup: Cadastro de usuário.
-- POST /login: Login de usuário.
-- POST /pokemons: Cadastro de um novo Pokémon.
-- PUT /pokemons/:id: Atualização do apelido de um Pokémon específico.
-- GET /pokemons: Listagem de todos os Pokémon em sua coleção.
-- GET /pokemons/:id: Detalhes de um Pokémon específico.
-- DELETE /pokemons/:id: Exclusão de um Pokémon da coleção.
+- POST /cadastro  Cadastro de usuário.
+- POST /login Login de usuário.
+- POST /cadastropokemon: Cadastro de um novo Pokémon.
+- PUT /apelidopokemon Atualização do apelido de um Pokémon específico.
+- GET /listapokemon: Listagem de todos os Pokémon em sua coleção.
+- GET /pokemon Detalhes de um Pokémon específico.
+- DELETE /excluirpokemon Exclusão de um Pokémon da coleção.
 
 ## Instalação das Dependências
 
