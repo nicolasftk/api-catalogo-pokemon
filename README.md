@@ -6,25 +6,36 @@ Esta é uma API para catalogar Pokémon com uso de tecnologias de autenticação
 
 A API oferece as seguintes funcionalidades:
 
-- Cadastro de usuário com senha criptografada.
-- Login de usuário com geração de token de autenticação.
-- Cadastro de Pokémon com nome, habilidades e apelido (opcional).
-- Atualização do apelido de um Pokémon.
-- Listagem de todos os Pokémon em sua coleção.
-- Detalhes de um Pokémon específico.
-- Exclusão de um Pokémon da coleção.
+#### Cadastro de Usuário
+- **Campos Exigidos:** nome, email, senha criptografada.
+
+#### Login de Usuário
+- **Campos Exigidos:** email, senha.
+
+#### Cadastro de Pokémon
+- **Campos Exigidos:** nome, habilidades.
+- **Campos Opcionais:** apelido, imagem.
+
+#### Atualização do Apelido de um Pokémon
+- **Campos Exigidos:** id, apelido.
+
+#### Detalhes de um Pokémon Específico
+- **Campos Exigidos:** id.
+
+#### Exclusão de um Pokémon da Coleção
+- **Campos Exigidos:** id.
 
 ## Endpoints da API
 
 Aqui estão os endpoints ativos na API, todos acessíveis através do arquivo rotas.js:
 
-- POST /signup: Cadastro de usuário.
-- POST /login: Login de usuário.
-- POST /pokemons: Cadastro de um novo Pokémon.
-- PUT /pokemons/:id: Atualização do apelido de um Pokémon específico.
-- GET /pokemons: Listagem de todos os Pokémon em sua coleção.
-- GET /pokemons/:id: Detalhes de um Pokémon específico.
-- DELETE /pokemons/:id: Exclusão de um Pokémon da coleção.
+- POST /cadastro  Cadastro de usuário.
+- POST /login Login de usuário.
+- POST /cadastropokemon: Cadastro de um novo Pokémon.
+- PUT /apelidopokemon Atualização do apelido de um Pokémon específico.
+- GET /listapokemon: Listagem de todos os Pokémon em sua coleção.
+- GET /pokemon Detalhes de um Pokémon específico.
+- DELETE /excluirpokemon Exclusão de um Pokémon da coleção.
 
 ## Instalação das Dependências
 
