@@ -9,7 +9,7 @@ rotas.post("/login", login);
 rotas.use(validarToken);
 rotas.post("/cadastropokemon", cadastrarPokemon);
 rotas.put("/apelidopokemon", atualizarApelido);
-rotas.get("/listaPokemon", listagemPokemon);
+rotas.get("/listapokemon", listagemPokemon);
 rotas.get("/pokemon", pokemonDetalhado);
 rotas.delete("/excluirpokemon", excluirPokemon);
 
