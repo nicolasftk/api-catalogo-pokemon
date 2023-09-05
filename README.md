@@ -6,13 +6,24 @@ Esta é uma API para catalogar Pokémon com uso de tecnologias de autenticação
 
 A API oferece as seguintes funcionalidades:
 
-- Cadastro de usuário com senha criptografada.
-- Login de usuário com geração de token de autenticação.
-- Cadastro de Pokémon com nome, habilidades e apelido (opcional).
-- Atualização do apelido de um Pokémon.
-- Listagem de todos os Pokémon em sua coleção.
-- Detalhes de um Pokémon específico.
-- Exclusão de um Pokémon da coleção.
+#### Cadastro de Usuário
+- **Campos Exigidos:** nome, email, senha criptografada.
+
+#### Login de Usuário
+- **Campos Exigidos:** email, senha.
+
+#### Cadastro de Pokémon
+- **Campos Exigidos:** nome, habilidades.
+- **Campos Opcionais:** apelido, imagem.
+
+#### Atualização do Apelido de um Pokémon
+- **Campos Exigidos:** id, apelido.
+
+#### Detalhes de um Pokémon Específico
+- **Campos Exigidos:** id.
+
+#### Exclusão de um Pokémon da Coleção
+- **Campos Exigidos:** id.
 
 ## Endpoints da API
 
